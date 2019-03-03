@@ -1,0 +1,7 @@
+{
+  "name": "tesseract",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

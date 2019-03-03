@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tesserac
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button color="primary" (click)="selectSource()">Select Image</ion-button>
+  <ion-button color="primary" (click)="recognizeImage()" [disabled]="!selectedImage">Recognize Image</ion-button>
+  <img [src]="selectedImage" *ngIf="selectedImage">
+  <ion-card *ngIf="imageText">
+  <ion-card-header>
+    image text
+  </ion-card-header>
+  <ion-card-content>
+    {{imageText}}
+  </ion-card-content>
+  </ion-card>
+</ion-content>
