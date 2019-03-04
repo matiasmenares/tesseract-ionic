@@ -60,8 +60,6 @@ export class Tab1Page {
     recognizeImage() {
         let self = this;
         console.log('entro a leer foto');
-        console.log(Globals);
-        console.log(Globals.tesseract);
         Globals.tesseract.recognize(this.selectedImage)
             .then(function (result) {
                 self.imageText = result.text;
